@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/drift-tech/drift-releases/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-[Website](https://godrift.ai) • [Documentation](https://godrift.ai/docs) • [Issues](https://github.com/drift-tech/drift-releases/issues)
+[Website](https://godrift.ai) • [Issues](https://github.com/drift-tech/drift-releases/issues)
 
 </div>
 
