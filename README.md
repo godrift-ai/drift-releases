@@ -4,11 +4,11 @@
 
 **Your AI-Powered Copilot for Robotics Simulations**
 
-[![Latest Release](https://img.shields.io/badge/version-1.0.13-blue.svg)](https://github.com/drift-tech/drift-releases/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/drift-tech/drift-releases/releases)
+[![Latest Release](https://img.shields.io/badge/version-1.0.13-blue.svg)](https://github.com/godrift-ai/drift-releases/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/godrift-ai/drift-releases/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-[Website](https://godrift.ai) • [Issues](https://github.com/drift-tech/drift-releases/issues)
+[Website](https://godrift.ai) • [Issues](https://github.com/godrift-ai/drift-releases/issues)
 
 </div>
 
@@ -28,10 +28,10 @@ curl -fsSL https://godrift.ai/install | bash
 
 ## 📦 Latest Release
 
-**Current Version:** `1.0.13` ([View Release Notes](https://github.com/drift-tech/drift-releases/releases/latest))
+**Current Version:** `1.0.13` ([View Release Notes](https://github.com/godrift-ai/drift-releases/releases/latest))
 
 Download the `.deb` package directly:
-- [drift-cli_1.0.13_amd64.deb](https://github.com/drift-tech/drift-releases/releases/latest)
+- [drift-cli_1.0.13_amd64.deb](https://github.com/godrift-ai/drift-releases/releases/latest)
 
 ---
 
@@ -125,7 +125,7 @@ drift> /update
 
 If you prefer to install manually:
 
-1. Download the latest `.deb` package from [Releases](https://github.com/drift-tech/drift-releases/releases/latest)
+1. Download the latest `.deb` package from [Releases](https://github.com/godrift-ai/drift-releases/releases/latest)
 2. Install with dpkg:
    ```bash
    sudo dpkg -i drift-cli_*.*.*_amd64.deb
@@ -152,8 +152,8 @@ source ~/.bashrc  # or ~/.zshrc
 
 ## 💬 Support & Community
 
-- **🐛 Found a bug?** [Report it here](https://github.com/drift-tech/drift-releases/issues)
-- **💡 Have a feature request?** [Let us know](https://github.com/drift-tech/drift-releases/issues/new)
+- **🐛 Found a bug?** [Report it here](https://github.com/godrift-ai/drift-releases/issues)
+- **💡 Have a feature request?** [Let us know](https://github.com/godrift-ai/drift-releases/issues/new)
 - **📖 Need help?** Run `drift --help` or email at founders@godrift.ai
 - **🌐 Website:** [godrift.ai](https://godrift.ai)
 
@@ -195,7 +195,7 @@ Drift CLI is released under the [MIT License](LICENSE).
 
 ## 🚀 What's Next?
 
-We're continuously improving Drift CLI based on your feedback. Check our [releases page](https://github.com/drift-tech/drift-releases/releases) to see what's new, and don't hesitate to reach out with suggestions.
+We're continuously improving Drift CLI based on your feedback. Check our [releases page](https://github.com/godrift-ai/drift-releases/releases) to see what's new, and don't hesitate to reach out with suggestions.
 
 **Happy building! 🤖**
 
@@ -203,7 +203,7 @@ We're continuously improving Drift CLI based on your feedback. Check our [releas
 
 <div align="center">
 
-**[Install Now](https://godrift.ai/install)** • **[View Releases](https://github.com/drift-tech/drift-releases/releases)** • **[Get Support](https://github.com/drift-tech/drift-releases/issues)**
+**[Install Now](https://godrift.ai/install)** • **[View Releases](https://github.com/godrift-ai/drift-releases/releases)** • **[Get Support](https://github.com/godrift-ai/drift-releases/issues)**
 
 Made with ❤️ by the Drift team
 
