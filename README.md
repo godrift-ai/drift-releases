@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/godrift-ai/drift-releases/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-[Website](https://godrift.ai) • [Issues](https://github.com/godrift-ai/drift-releases/issues)
+[Website](https://godrift.ai) • [Issues](https://github.com/godrift-ai/drift-releases/issues) • [Docs](https://docs.github.com)
 
 </div>
 
@@ -39,7 +39,7 @@ Download the `.deb` package directly:
 
 Drift CLI eliminates the steep learning curve of robotics simulation development. It's an AI-powered assistant that understands natural language and helps you build, test, and debug complex robotic systems using conversational commands.
 
-**No more memorizing complex ROS2 commands or Gazebo configurations** — just describe what you want to build, and Drift handles the rest.
+**No more wrestling complex ROS2 commands or Gazebo configurations** — just describe what you want to build, and Drift handles the rest.
 
 ### ✨ Key Features
 
@@ -203,7 +203,7 @@ We're continuously improving Drift CLI based on your feedback. Check our [releas
 
 <div align="center">
 
-**[Install Now](https://godrift.ai/install)** • **[View Releases](https://github.com/godrift-ai/drift-releases/releases)** • **[Get Support](https://github.com/godrift-ai/drift-releases/issues)**
+**[Get Started](https://docs.godrift.ai)** • **[View Releases](https://github.com/godrift-ai/drift-releases/releases)** • **[Get Support](https://github.com/godrift-ai/drift-releases/issues)**
 
 Made with ❤️ by the Drift team
 
