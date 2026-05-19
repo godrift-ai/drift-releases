@@ -2,9 +2,9 @@
 
 <div align="center">
 
-**Your AI-Powered Copilot for Robotics Simulations**
+**Your Agent for Robotics Engineering, taking you from specs to simulations in minutes.**
 
-[![Latest Release](https://img.shields.io/badge/version-1.0.22-blue.svg)](https://github.com/godrift-ai/drift-releases/releases/latest)
+[![Latest Release](https://img.shields.io/badge/version-1.0.23-blue.svg)](https://github.com/godrift-ai/drift-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/godrift-ai/drift-releases/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -28,10 +28,10 @@ curl -fsSL https://godrift.ai/install | bash
 
 ## 📦 Latest Release
 
-**Current Version:** `1.0.22` ([View Release Notes](https://github.com/godrift-ai/drift-releases/releases/latest))
+**Current Version:** `1.0.23` ([View Release Notes](https://github.com/godrift-ai/drift-releases/releases/latest))
 
 Download the `.deb` package directly:
-- [drift-cli_1.0.22_amd64.deb](https://github.com/godrift-ai/drift-releases/releases/latest)
+- [drift-cli_1.0.23_amd64.deb](https://github.com/godrift-ai/drift-releases/releases/latest)
 
 ---
 
