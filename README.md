@@ -1,14 +1,12 @@
-# Drift CLI
+# Drift Desktop
 
 <div align="center">
 
-**Your Agent for Robotics Engineering, taking you from specs to simulations in minutes.**
+**The platform for robotics simulation — from natural language to a running robot, in one place.**
 
-[![Latest Release](https://img.shields.io/badge/version-1.0.26-blue.svg)](https://github.com/godrift-ai/drift-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://github.com/godrift-ai/drift-releases/releases)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-[Website](https://godrift.ai) • [Issues](https://github.com/godrift-ai/drift-releases/issues) • [Docs](https://docs.github.com)
+[Website](https://godrift.ai) • [Docs](https://docs.godrift.ai) • [Issues](https://github.com/godrift-ai/drift-releases/issues)
 
 </div>
 
@@ -16,188 +14,184 @@
 
 ## 🚀 Quick Install
 
-Get started with Drift CLI in seconds:
+One command installs the Drift Desktop app and its command-line companion, and launches the app for you when a display is available:
 
 ```bash
 curl -fsSL https://godrift.ai/install | bash
 ```
 
-**That's it!** Once installed, simply run `drift` to start.
+That's it. When it finishes, the app opens; anywhere else you land in a terminal, typing `drift` gives you the same intelligence at the command line.
 
 ---
 
-## 📦 Latest Release
+## What is Drift Desktop?
 
-**Current Version:** `1.0.26` ([View Release Notes](https://github.com/godrift-ai/drift-releases/releases/latest))
+Drift Desktop is a purpose-built environment for people who build robots — a workspace that understands what a scene, an asset, a sensor, a controller and a run *are*, and lets you compose them by describing what you want rather than by memorising APIs across three simulators and half a dozen tools.
 
-Download the `.deb` package directly:
-- [drift-cli_1.0.26_amd64.deb](https://github.com/godrift-ai/drift-releases/releases/latest)
+The everyday robotics stack — Gazebo worlds, MuJoCo scenes, Isaac Sim environments, launch files, controllers, calibration passes — is powerful and fragmented. Drift puts a single agent between you and all of it, so a sentence like *"give me an indoor kitchen, drop a Booster T1 in front of the counter, and start recording joint torques"* becomes an actual scene you can inspect, tweak and re-run.
 
 ---
 
-## What is Drift?
+## ✨ What Makes it Powerful
 
-Drift CLI eliminates the steep learning curve of robotics simulation development. It's an AI-powered assistant that understands natural language and helps you build, test, and debug complex robotic systems using conversational commands.
+- **Talk-to-your-lab interface** — describe a robot, a task or a fix in plain language; Drift plans, builds, and runs it, showing you every step so you can steer or override.
+- **Live 3D viewport** — meshes, sensors, contacts and trajectories render inline as the agent works. Nothing hides in a headless terminal.
+- **Robot library** — curated humanoids, arms, quadrupeds and grippers you can drop into a scene by name, or bring your own URDF / MJCF / USD.
+- **Scene understanding** — worlds are objects, not blobs of XML. Change lighting, swap the floor, add a shelf, and everything else keeps working.
+- **Reproducible runs** — every session, every asset choice and every command is recorded, so a run that worked yesterday still works tomorrow — and you can share the exact recipe.
+- **The same brain at the terminal** — the CLI shipped in the same install (`drift`) does everything the app does, so servers, CI pipelines and SSH sessions get the same agent as your laptop.
 
-**No more wrestling complex ROS2 commands or Gazebo configurations** — just describe what you want to build, and Drift handles the rest.
+---
 
-### ✨ Key Features
+## 🧠 Simulators, First-Class
 
-- **🗣️ Natural Language Interface** — Talk to your simulation like you're talking to a colleague
-- **🤖 ROS2 & Gazebo Integration** — Seamless workflow with your favorite robotics tools
-- **⚡ Intelligent Workspace Management** — Automatic package and workspace generation
-- **🔄 Adaptive Planning** — Real-time error recovery and problem-solving
-- **📄 Launch File Generation** — Automatic creation and validation of launch files
-- **🎯 Process Management** — Track and manage multiple background processes
-- **📊 Smart Debugging** — AI-assisted troubleshooting and error analysis
+Drift is built to reach across the simulators you already use, and to speak each one on its own terms:
 
-### 💡 Example Commands
+- **MuJoCo** — fast, contact-rich physics for humanoids, arms and quadrupeds. Drift authors MJCF scenes end-to-end, wires actuators, and runs training-friendly rollouts.
+- **Gazebo** — the ROS-native workhorse. Full SDF world composition, ROS 2 bridges, sensor plugins and launch-file generation, without leaving the app.
+- **NVIDIA Isaac Sim** — production-grade photorealism, USD scenes, GPU physics. Drift assembles USD stages, drives Isaac's Python API, and hands the viewport back to you.
 
-```bash
-drift> create a three arm manipulator with camera sensor
-drift> launch my robot with the custom world file
-drift> add a lidar sensor to my robot and rebuild
-drift> why isn't my camera publishing images?
-```
+Switching simulators is a change of intent, not a change of tools. The same natural-language plan targets any of them.
+
+---
+
+## 💡 What You Can Do In an Afternoon
+
+- Spin up a humanoid in a warehouse scene and record IK-driven pick-and-place.
+- Generate a Gazebo world with a moving conveyor, drop three depth cameras, and log point clouds.
+- Import a URDF, ask for a MuJoCo variant with contact-rich hands, and compare stability.
+- Run a controller sweep across seeds and get an inline chart, without leaving the app.
+- Hand a teammate a `.drift` bundle that reproduces your whole setup, byte-for-byte.
 
 ---
 
 ## 🖥️ System Requirements
 
-- **OS:** Ubuntu 20.04+ (Debian-based distributions)
-- **ROS:** ROS2 (Humble, Foxy, or later recommended)
-- **Gazebo:** Gazebo Sim (Harmonic)
-- **Architecture:** x86_64 (amd64)
+- **OS:** Ubuntu 22.04+ (or any Debian 12+ derivative)
+- **Architecture:** x86_64 (arm64 coming)
+- **Recommended:** a discrete GPU for Isaac Sim workflows
 
-We are bring support for older versions of ROS and Gazebo as well
+For simulator-specific setup (ROS 2 for Gazebo, Isaac Sim install, GPU drivers), see [the docs](https://docs.godrift.ai).
 
 ---
 
 ## 📚 Getting Started
 
-### 1. Install Drift CLI
+### 1. Install
 
 ```bash
 curl -fsSL https://godrift.ai/install | bash
 ```
 
-### 2. Launch Drift
+### 2. Open the app
+
+The installer launches Drift Desktop when it finishes. On a headless machine, or to open it later:
+
+```bash
+drift-desktop
+```
+
+### 3. Or use the CLI
+
+Everything the app does is also available at the terminal:
 
 ```bash
 drift
 ```
 
-### 3. Start Building
+### 4. Ask it something real
+
+Try any of these in the composer:
 
 ```
-drift> /help                    # View all commands
-drift> /version                 # Check your version
-drift> create a ROS workspace   # Start building!
+> author a MuJoCo scene: humanoid at spawn, kitchen counter, a mug on the counter
+> import my URDF at ./arm.urdf and give me an Isaac Sim variant
+> in Gazebo, build a warehouse with two AMRs and a moving conveyor
+> add a lidar to my robot, rebuild, and record 10 seconds of scans
+> why is the left gripper slipping on the mug?
 ```
-
-### 4. Special Commands
-
-- `/help` — Show comprehensive help and examples
-- `/version` — Display version information
-- `/update` — Update to the latest version
-- `/ps` — Show running background processes
-- `/clear` — Clear the terminal screen
-- `/exit` — Exit Drift CLI
 
 ---
 
 ## 🔄 Updates
 
-Drift CLI includes automatic update detection. When a new version is available, you'll see a notification on startup like this:
+Drift Desktop checks for new releases on its own and offers to install them. You never have to hunt for a version.
 
-```
-ℹ️  A new version (1.1.0) is available. Type /update to install.
-```
+If you'd rather update by hand, re-running the install command is always safe — it fetches the latest signed release and takes over cleanly:
 
-Simply run:
 ```bash
-drift> /update
+curl -fsSL https://godrift.ai/install | bash
 ```
 
 ---
 
-## 🛠️ Manual Installation
+## 🛠️ Manual Install
 
-If you prefer to install manually:
+If you'd rather not pipe curl to bash:
 
-1. Download the latest `.deb` package from [Releases](https://github.com/godrift-ai/drift-releases/releases/latest)
-2. Install with dpkg:
+1. Download the latest `.deb` from [Releases](https://github.com/godrift-ai/drift-releases/releases/latest).
+2. Install:
    ```bash
-   sudo dpkg -i drift-cli_*.*.*_amd64.deb
+   sudo dpkg -i drift_*_amd64.deb
+   sudo apt-get install -f -y   # if any GTK / WebKit dependencies were missing
    ```
-3. Run `drift` to start
+3. Launch:
+   ```bash
+   drift-desktop   # the app
+   drift           # the CLI
+   ```
+
+Every release is signed. Your installed app verifies the signature of any update before it installs it — an unsigned or tampered artifact is refused.
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Issue: "Command not found: drift"
-**Solution:** Try restarting your terminal or running:
+**"Command not found: drift" after installing**
+Open a new terminal (or run `hash -r`) so the shell picks up the newly installed binary.
+
+**The app won't launch on a headless / SSH box**
+Drift Desktop needs a display server (X11 or Wayland). Use the CLI (`drift`) instead — it's the same agent without the viewport.
+
+**Dependencies missing on install**
 ```bash
-source ~/.bashrc  # or ~/.zshrc
+sudo apt-get install -f -y
 ```
 
-### Issue: Update fails
-**Solution:** Manually download and install the latest `.deb` package from the releases page.
-
-### Issue: Permission denied errors
-**Solution:** Ensure you have proper permissions. The installer may need sudo access.
+**Update seems stuck**
+Re-running the install command (`curl -fsSL https://godrift.ai/install | bash`) fetches the latest and reinstalls in place.
 
 ---
 
-## 💬 Support & Community
+## 💬 Support
 
-- **🐛 Found a bug?** [Report it here](https://github.com/godrift-ai/drift-releases/issues)
-- **💡 Have a feature request?** [Let us know](https://github.com/godrift-ai/drift-releases/issues/new)
-- **📖 Need help?** Run `drift --help` or email at founders@godrift.ai
-- **🌐 Website:** [godrift.ai](https://godrift.ai)
+- **Bugs / feature requests:** [github.com/godrift-ai/drift-releases/issues](https://github.com/godrift-ai/drift-releases/issues)
+- **Docs:** [docs.godrift.ai](https://docs.godrift.ai)
+- **Email:** founders@godrift.ai
+- **Website:** [godrift.ai](https://godrift.ai)
 
 ---
 
-## ❤️ Made with Love for the Robotics Community
+## ❤️ Why We Built This
 
-Drift was born out of a simple observation: **robotics development is incredibly powerful but unnecessarily complex**. We've spent countless hours wrestling with ROS configurations, debugging launch files, and searching through documentation just to get simple things working.
+Robotics simulation is powerful and, today, unnecessarily hard. Half a day disappears into launch files, another half chasing a plugin version, and by the time the scene runs, the idea you started with has gone cold.
 
-**We built Drift because we believe robotics should be accessible to everyone** — from students taking their first steps into ROS, to experienced engineers who just want to move faster.
-
-This tool is our gift to the robotics community. We hope it saves you time, reduces frustration, and lets you focus on what really matters: **building amazing robots**.
+Drift Desktop is our answer: **one place that speaks Gazebo, MuJoCo and Isaac Sim, listens in English, and remembers what worked**. Students get to the interesting parts sooner. Researchers iterate without re-learning the tooling each time. Engineers ship.
 
 Whether you're:
-- 🎓 A student learning ROS for the first time
-- 🔬 A researcher iterating on novel algorithms
-- 🏭 An engineer developing production systems
-- 🤖 A hobbyist bringing your robot dreams to life
 
-**Drift is here to help you succeed.**
+- 🎓 A student meeting ROS 2 for the first time
+- 🔬 A researcher iterating on a novel controller
+- 🏭 An engineer building a production stack
+- 🤖 A hobbyist bringing your robot dream to life
+
+**Drift Desktop is here so you can spend the day on the robot, not the tooling.**
 
 ---
 
 ## 🙏 Acknowledgments
 
-Drift CLI wouldn't be possible without the incredible open-source robotics community. Special thanks to:
-
-- **ROS2** — For providing the foundation of modern robotics
-- **Gazebo** — For powering realistic simulations
-- **The entire robotics community** — For pushing the boundaries of what's possible
-
----
-
-## 📄 License
-
-Drift CLI is released under the [MIT License](LICENSE).
-
----
-
-## 🚀 What's Next?
-
-We're continuously improving Drift CLI based on your feedback. Check our [releases page](https://github.com/godrift-ai/drift-releases/releases) to see what's new, and don't hesitate to reach out with suggestions.
-
-**Happy building! 🤖**
+Built on the shoulders of the open-source robotics community. Special thanks to the teams behind **Gazebo**, **MuJoCo**, **NVIDIA Isaac Sim** and **ROS 2** — and to every roboticist who has ever fought a launch file and lived to tell the tale.
 
 ---
 
